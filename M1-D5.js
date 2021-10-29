@@ -22,6 +22,10 @@ area(4, 7)
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 const crazySum = function(val1, val2) {
+
+    if(val1 === undefined || val2 === undefined) {
+        console.log("Please insert two arguments")
+    } 
     if (val1 === val2) {
         return console.log((val1 + val2) * 3)
     } else {
@@ -30,13 +34,21 @@ const crazySum = function(val1, val2) {
 }
 
 crazySum(2, 5)
+
+
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
  It should return triple their absolute difference if the given number is greater than 19.
 */
+const crazyDiff = function(num) {
+    if (num < 19) {
+        console.log("Number is less than 19.")
+    } else {
+        console.log((num-19) * 3);
+    }
+}
 
-/* WRITE YOUR ANSWER HERE */
-
+crazyDiff(25)
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
