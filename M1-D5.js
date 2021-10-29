@@ -21,9 +21,15 @@ area(4, 7)
  Write a function called "crazySum" which receives two integers as parameters.
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
+const crazySum = function(val1, val2) {
+    if (val1 === val2) {
+        return console.log((val1 + val2) * 3)
+    } else {
+        return console.log(val1 + val2)
+    }
+}
 
-/* WRITE YOUR ANSWER HERE */
-
+crazySum(2, 5)
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
  It should return triple their absolute difference if the given number is greater than 19.
